@@ -1,0 +1,71 @@
+/* CSS */
+
+body {
+    background-color: #966fd6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.containerTitle {
+    align-items: center;
+    text-align: center;
+}
+.title {
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(20),
+        cursor .4s step-end infinite alternate;
+}
+
+/* cursor blinking */
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+/* typing effect */
+@keyframes typing {
+    from {width: 0 }
+}
+
+#options {
+    margin-top: 20px; /* Space between description and buttons */
+    gap: 10px; /* Adds space between buttons */
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 26px;
+    font-family: monospace;
+    border: none;
+
+}
+
+.yes-button {
+    background-color: green;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px #022f00);
+}
+
+.no-button {
+    background-color: red;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
